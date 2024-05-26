@@ -18,6 +18,6 @@ namespace JuboHealth_Model.Jubo
         /// </summary>
         /// <remarks> foreign to Order collection</remarks>
         [BsonElement("OrderId")]
-        public string OrderId { get; set; }
+        public int OrderId { get; set; }
     }
 }

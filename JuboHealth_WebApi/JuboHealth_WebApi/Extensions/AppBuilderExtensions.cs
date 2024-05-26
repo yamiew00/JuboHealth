@@ -10,6 +10,7 @@ namespace JuboHealth_WebApi.Extensions
             //service layer
             services.AddScoped<IPatientService, PatientService>();
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IAdminService, AdminService>();
 
             return services;
         }
