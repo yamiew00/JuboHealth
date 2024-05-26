@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using MongoGogo.Connection;
 
 namespace JuboHealth_Model.Jubo
@@ -18,6 +19,6 @@ namespace JuboHealth_Model.Jubo
         /// </summary>
         /// <remarks> foreign to Order collection</remarks>
         [BsonElement("OrderId")]
-        public int OrderId { get; set; }
+        public List<int> OrderId { get; set; }
     }
 }

@@ -54,31 +54,31 @@ namespace JuboHealth_WebApi.Services.Implementations
             {
                 Id = 1,
                 Name = "小民",
-                OrderId = 1
+                OrderId = new List<int> { 1 }
             },
             new Patient
             {
                 Id = 2,
                 Name = "小華",
-                OrderId = 2
+                OrderId = new List<int> { 2 }
             },
             new Patient
             {
                 Id = 3,
                 Name = "小美",
-                OrderId = 3
+                OrderId = new List<int> { 3 }
             },
             new Patient
             {
                 Id = 4,
                 Name = "浩克",
-                OrderId = 4
+                OrderId = new List<int> { 4 }
             },
             new Patient
             {
                 Id = 5,
                 Name = "閃電俠",
-                OrderId = 5
+                OrderId = new List<int> { 5 }
             }
         };
 

@@ -2,5 +2,6 @@
 {
     public class GetOrdersRequest
     {
+        public int PatientId { get; set; }
     }
 }
