@@ -20,7 +20,7 @@ namespace JuboHealth_WebApi.Services.Implementations
         public async Task ResetAllData()
         {
             var initialState = new InitialState();
-
+            
             //reset patient by replacements
             var patientBulker = _patientCollection.NewBulker();
             initialState.Patients.ForEach(patient =>

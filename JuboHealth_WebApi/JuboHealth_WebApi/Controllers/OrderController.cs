@@ -15,6 +15,13 @@ namespace JuboHealth_WebApi.Controllers
             this._orderService = orderService;
         }
 
+        [HttpPost("add-order")]
+        public async Task<AddOrderResponse> AddOrder(AddOrderRequest request)
+        {
+            AddOrderResponse response = await _orderService.AddOrder(request);
+            return response;
+        }
+
         /// <summary>
         /// 取得單一 patient 的 order
         /// </summary>
