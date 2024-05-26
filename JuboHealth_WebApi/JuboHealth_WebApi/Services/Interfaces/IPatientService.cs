@@ -1,6 +1,9 @@
-﻿namespace JuboHealth_WebApi.Services.Interfaces
+﻿using JuboHealth_WebApi.ProtocolModel.Patient;
+
+namespace JuboHealth_WebApi.Services.Interfaces
 {
-    public class IPatientService
+    public interface IPatientService
     {
+        Task<GetPatientsResponse> GetPatients();
     }
 }

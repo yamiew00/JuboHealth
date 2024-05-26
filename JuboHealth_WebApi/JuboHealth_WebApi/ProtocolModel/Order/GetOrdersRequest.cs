@@ -1,6 +1,6 @@
 ﻿namespace JuboHealth_WebApi.ProtocolModel.Order
 {
-    public class OrderRequest
+    public class GetOrdersRequest
     {
     }
 }
