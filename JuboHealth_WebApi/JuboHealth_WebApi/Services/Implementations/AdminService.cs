@@ -23,6 +23,8 @@ namespace JuboHealth_WebApi.Services.Implementations
             
             //reset patient by replacements
             var patientBulker = _patientCollection.NewBulker();
+
+            patientBulker.DeleteMany(_ => true);
             initialState.Patients.ForEach(patient =>
             {
                 patientBulker.ReplaceOne(filter: dbPatient => dbPatient.Id == patient.Id,
@@ -33,6 +35,7 @@ namespace JuboHealth_WebApi.Services.Implementations
 
             //reset order by replacements
             var orderBulker = _orderCollection.NewBulker();
+            orderBulker.DeleteMany(_ => true);
             initialState.Orders.ForEach(order =>
             {
                 orderBulker.ReplaceOne(filter: dbOrder => dbOrder.Id == order.Id,
